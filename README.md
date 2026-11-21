@@ -1,6 +1,24 @@
-# Java course documentation
+<p align="center">
+  <img src="docs/assets/java.png" alt="Java logo" width="180">
+</p>
 
-## Modules
+<h1 align="center">Java from Zero to Hero</h1>
+
+<p align="center">A free, organized core-Java learning path — structured for humans and AI agents.</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Java%2025%20LTS-007396" alt="Java 25 LTS">
+  <img src="https://img.shields.io/badge/Core%20Java-007396" alt="Core Java">
+  <img src="https://img.shields.io/badge/MIT%20license-green" alt="MIT license">
+</p>
+
+<p align="center">
+  <a href="#the-course"><strong>Browse the curriculum &rarr;</strong></a><br>
+</p>
+
+## The course
+
+The modules below follow a path from the platform and language basics to collections, concurrency, and design — open a folder to work through its topics.
 
 | # | Module | Folder | Topics |
 | - | ------ | ------ | ------ |
@@ -19,10 +37,13 @@
 | 12 | M12 Language evolution | [12-language-evolution/](12-language-evolution/) | 1 + appendix |
 | 13 | M13 Design, testing and diagnostics | [13-design-testing/](13-design-testing/) | 4 |
 
-Total: 14 modules, 66 topics, one appendix.
+## Why this course
 
-## Reference
+- **Core Java only** — the language and standard library, with no frameworks.
+- **Java 25 LTS** — aligned with the current long-term support release.
+- **A fixed topic structure** — every topic uses the same sections, with exercises and expected output.
+- **Agent-friendly by design** — stable topic IDs and frontmatter make the material easy for AI agents to navigate.
 
-- [Topic template](_template.md)
-- [Java version matrix](docs/java-version-matrix.md)
-- [LTS review checklist](docs/lts-review-checklist.md)
+---
+
+MIT license · © 2026 Pablo Díaz
