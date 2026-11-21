@@ -22,3 +22,9 @@ minutes: 25
 ## Solutions
 
 ## References
+
+- [`java.lang.String`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html)
+- [`java.lang.StringBuilder`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/StringBuilder.html)
+- [`java.lang.CharSequence`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/CharSequence.html)
+- [`java.lang.Character`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Character.html)
+- [JLS §3.10.5 — String Literals](https://docs.oracle.com/javase/specs/jls/se25/html/jls-3.html)

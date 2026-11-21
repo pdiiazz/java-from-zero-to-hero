@@ -22,3 +22,7 @@ minutes: 25
 ## Solutions
 
 ## References
+
+- [JLS §17 — Threads and Locks](https://docs.oracle.com/javase/specs/jls/se25/html/jls-17.html)
+- [`java.lang.Thread`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Thread.html)
+- [`java.util.concurrent.atomic.AtomicInteger`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/atomic/AtomicInteger.html)

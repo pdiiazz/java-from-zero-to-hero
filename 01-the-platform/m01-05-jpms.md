@@ -22,3 +22,8 @@ minutes: 25
 ## Solutions
 
 ## References
+
+- [JLS §7.7 — Modules](https://docs.oracle.com/javase/specs/jls/se25/html/jls-7.html)
+- [`java.lang.module.ModuleDescriptor`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/module/ModuleDescriptor.html)
+- [`java.util.ServiceLoader`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/ServiceLoader.html)
+- [JEP 511 — Module Import Declarations](https://openjdk.org/jeps/511)

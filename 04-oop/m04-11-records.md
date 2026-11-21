@@ -23,3 +23,7 @@ minutes: 25
 ## Solutions
 
 ## References
+
+- [JLS §8.10 — Record Classes](https://docs.oracle.com/javase/specs/jls/se25/html/jls-8.html)
+- [`java.lang.Record`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Record.html)
+- [JEP 395 — Records](https://openjdk.org/jeps/395)

@@ -22,3 +22,7 @@ minutes: 15
 ## Solutions
 
 ## References
+
+- [JLS §14 — Statements](https://docs.oracle.com/javase/specs/jls/se25/html/jls-14.html)
+- [JLS §14.14 — The for Statement](https://docs.oracle.com/javase/specs/jls/se25/html/jls-14.html)
+- [`java.lang.Iterable`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Iterable.html)

@@ -22,3 +22,6 @@ minutes: 25
 ## Solutions
 
 ## References
+
+- [`java.lang.Thread`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Thread.html)
+- [JEP 444 — Virtual Threads](https://openjdk.org/jeps/444)

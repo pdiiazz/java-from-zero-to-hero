@@ -23,3 +23,7 @@ minutes: 25
 ## Solutions
 
 ## References
+
+- [JLS §8.8 — Constructor Declarations](https://docs.oracle.com/javase/specs/jls/se25/html/jls-8.html)
+- [`java.lang.Object`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Object.html)
+- [JEP 513 — Flexible Constructor Bodies](https://openjdk.org/jeps/513)

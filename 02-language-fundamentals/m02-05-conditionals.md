@@ -22,3 +22,8 @@ minutes: 20
 ## Solutions
 
 ## References
+
+- [JLS §14.9 — The if Statement](https://docs.oracle.com/javase/specs/jls/se25/html/jls-14.html)
+- [JLS §14.11 — The switch Statement](https://docs.oracle.com/javase/specs/jls/se25/html/jls-14.html)
+- [JLS §15.25 — The Conditional Operator ? :](https://docs.oracle.com/javase/specs/jls/se25/html/jls-15.html)
+- [JEP 361 — Switch Expressions](https://openjdk.org/jeps/361)

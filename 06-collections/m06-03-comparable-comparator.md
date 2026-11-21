@@ -22,3 +22,6 @@ minutes: 20
 ## Solutions
 
 ## References
+
+- [`java.lang.Comparable`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Comparable.html)
+- [`java.util.Comparator`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Comparator.html)

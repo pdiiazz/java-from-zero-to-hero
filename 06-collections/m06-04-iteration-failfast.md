@@ -22,3 +22,8 @@ minutes: 20
 ## Solutions
 
 ## References
+
+- [`java.lang.Iterable`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Iterable.html)
+- [`java.util.Iterator`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Iterator.html)
+- [`java.util.Spliterator`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Spliterator.html)
+- [`java.util.ConcurrentModificationException`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/ConcurrentModificationException.html)

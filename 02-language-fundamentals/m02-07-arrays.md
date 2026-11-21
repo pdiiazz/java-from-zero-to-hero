@@ -22,3 +22,7 @@ minutes: 20
 ## Solutions
 
 ## References
+
+- [JLS §10 — Arrays](https://docs.oracle.com/javase/specs/jls/se25/html/jls-10.html)
+- [`java.util.Arrays`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Arrays.html)
+- [`java.lang.reflect.Array`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/reflect/Array.html)

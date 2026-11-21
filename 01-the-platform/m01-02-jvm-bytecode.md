@@ -22,3 +22,8 @@ minutes: 20
 ## Solutions
 
 ## References
+
+- [Java Virtual Machine Specification, Java SE 25 Edition](https://docs.oracle.com/javase/specs/jvms/se25/html/index.html)
+- [`java.lang.Class`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html)
+- [`java.lang.ClassLoader`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/ClassLoader.html)
+- [`javap` tool](https://docs.oracle.com/en/java/javase/25/docs/specs/man/javap.html)

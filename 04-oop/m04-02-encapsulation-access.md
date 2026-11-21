@@ -23,3 +23,7 @@ minutes: 20
 ## Solutions
 
 ## References
+
+- [JLS §6.6 — Access Control](https://docs.oracle.com/javase/specs/jls/se25/html/jls-6.html)
+- [`java.util.Objects`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Objects.html)
+- [`java.lang.Object`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Object.html)

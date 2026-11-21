@@ -22,3 +22,7 @@ minutes: 20
 ## Solutions
 
 ## References
+
+- [`java.lang.ThreadLocal`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/ThreadLocal.html)
+- [`java.lang.ScopedValue`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/ScopedValue.html)
+- [JEP 506 — Scoped Values](https://openjdk.org/jeps/506)

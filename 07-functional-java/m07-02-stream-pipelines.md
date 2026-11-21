@@ -22,3 +22,8 @@ minutes: 30
 ## Solutions
 
 ## References
+
+- [`java.util.stream` package](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/package-summary.html)
+- [`java.util.stream.BaseStream`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/BaseStream.html)
+- [`java.util.stream.Stream`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Stream.html)
+- [`java.util.stream.IntStream`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/IntStream.html)

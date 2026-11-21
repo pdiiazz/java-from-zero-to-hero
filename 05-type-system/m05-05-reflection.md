@@ -22,3 +22,10 @@ minutes: 25
 ## Solutions
 
 ## References
+
+- [`java.lang.Class`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html)
+- [`java.lang.Module`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Module.html)
+- [`java.lang.reflect.Field`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/reflect/Field.html)
+- [`java.lang.reflect.Method`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/reflect/Method.html)
+- [`java.lang.reflect.Constructor`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/reflect/Constructor.html)
+- [`java.lang.reflect.Proxy`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/reflect/Proxy.html)

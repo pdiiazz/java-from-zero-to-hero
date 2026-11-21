@@ -22,3 +22,9 @@ minutes: 25
 ## Solutions
 
 ## References
+
+- [`java.lang.ref` package](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/ref/package-summary.html)
+- [`java.lang.ref.Cleaner`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/ref/Cleaner.html)
+- [`java.lang.ref.WeakReference`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/ref/WeakReference.html)
+- [`java.lang.ref.SoftReference`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/ref/SoftReference.html)
+- [`java.lang.ref.PhantomReference`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/ref/PhantomReference.html)

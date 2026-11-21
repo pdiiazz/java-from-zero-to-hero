@@ -22,3 +22,7 @@ minutes: 20
 ## Solutions
 
 ## References
+
+- [JLS §4.5.1 — Type Arguments and Wildcards](https://docs.oracle.com/javase/specs/jls/se25/html/jls-4.html)
+- [`java.util.List`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html)
+- [`java.util.Collection`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html)

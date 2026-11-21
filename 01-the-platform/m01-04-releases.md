@@ -22,3 +22,8 @@ minutes: 15
 ## Solutions
 
 ## References
+
+- [JEP index](https://openjdk.org/jeps/0)
+- [JEP 1 — The JEP Process](https://openjdk.org/jeps/1)
+- [JEP 322 — Time-Based Release Versioning](https://openjdk.org/jeps/322)
+- [Java SE 25 documentation](https://docs.oracle.com/en/java/javase/25/)

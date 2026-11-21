@@ -22,3 +22,7 @@ minutes: 20
 ## Solutions
 
 ## References
+
+- [`java.util.stream.Stream`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Stream.html)
+- [`java.util.stream.Gatherer`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Gatherer.html)
+- [JEP 485 — Gatherers for Java Streams](https://openjdk.org/jeps/485)

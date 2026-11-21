@@ -22,3 +22,9 @@ minutes: 20
 ## Solutions
 
 ## References
+
+- [JLS §9.7 — Annotations](https://docs.oracle.com/javase/specs/jls/se25/html/jls-9.html)
+- [`java.lang.annotation.Annotation`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/annotation/Annotation.html)
+- [`java.lang.annotation.Retention`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/annotation/Retention.html)
+- [`java.lang.annotation.Target`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/annotation/Target.html)
+- [`java.lang.annotation.Repeatable`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/annotation/Repeatable.html)

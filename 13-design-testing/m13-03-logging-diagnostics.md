@@ -22,3 +22,9 @@ minutes: 25
 ## Solutions
 
 ## References
+
+- [`java.lang.System.Logger`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/System.Logger.html)
+- [`java.util.logging.Logger`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/logging/Logger.html)
+- [`jdk.jfr.Recording`](https://docs.oracle.com/en/java/javase/25/docs/api/jdk.jfr/jdk/jfr/Recording.html)
+- [`jcmd` tool](https://docs.oracle.com/en/java/javase/25/docs/specs/man/jcmd.html)
+- [`jstack` tool](https://docs.oracle.com/en/java/javase/25/docs/specs/man/jstack.html)

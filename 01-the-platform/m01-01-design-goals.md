@@ -22,3 +22,7 @@ minutes: 15
 ## Solutions
 
 ## References
+
+- [JLS §1 — Introduction](https://docs.oracle.com/javase/specs/jls/se25/html/jls-1.html)
+- [JLS §4 — Types, Values, and Variables](https://docs.oracle.com/javase/specs/jls/se25/html/jls-4.html)
+- [Java SE 25 API specification](https://docs.oracle.com/en/java/javase/25/docs/api/)

@@ -22,3 +22,8 @@ minutes: 20
 ## Solutions
 
 ## References
+
+- [`javac` tool](https://docs.oracle.com/en/java/javase/25/docs/specs/man/javac.html)
+- [`java` tool](https://docs.oracle.com/en/java/javase/25/docs/specs/man/java.html)
+- [`jshell` tool](https://docs.oracle.com/en/java/javase/25/docs/specs/man/jshell.html)
+- [JEP 512 — Compact Source Files and Instance Main Methods](https://openjdk.org/jeps/512)

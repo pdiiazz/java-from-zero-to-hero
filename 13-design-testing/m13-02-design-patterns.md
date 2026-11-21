@@ -22,3 +22,7 @@ minutes: 30
 ## Solutions
 
 ## References
+
+- [Java SE 25 API specification](https://docs.oracle.com/en/java/javase/25/docs/api/)
+- [`java.util.function.Function`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/Function.html)
+- [`java.lang.reflect.Proxy`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/reflect/Proxy.html)

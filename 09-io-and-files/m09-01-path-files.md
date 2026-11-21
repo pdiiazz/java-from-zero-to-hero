@@ -22,3 +22,9 @@ minutes: 25
 ## Solutions
 
 ## References
+
+- [`java.nio.file.Path`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/Path.html)
+- [`java.nio.file.Files`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/Files.html)
+- [`java.nio.file.WatchService`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/WatchService.html)
+- [`java.nio.file.attribute.BasicFileAttributes`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html)
+- [`java.io.File`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/io/File.html)

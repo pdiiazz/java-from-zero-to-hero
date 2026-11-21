@@ -22,3 +22,7 @@ minutes: 25
 ## Solutions
 
 ## References
+
+- [`java.util.regex.Pattern`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/regex/Pattern.html)
+- [`java.util.regex.Matcher`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/regex/Matcher.html)
+- [`java.util.regex.PatternSyntaxException`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/regex/PatternSyntaxException.html)

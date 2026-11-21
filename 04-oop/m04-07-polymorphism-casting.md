@@ -23,3 +23,7 @@ minutes: 25
 ## Solutions
 
 ## References
+
+- [JLS §5.5 — Casting Contexts and Conversions](https://docs.oracle.com/javase/specs/jls/se25/html/jls-5.html)
+- [`java.lang.ClassCastException`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/ClassCastException.html)
+- [`java.lang.Class`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html)

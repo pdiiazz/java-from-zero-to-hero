@@ -320,8 +320,10 @@ keeps the invariant in one place per level.
 
 ## References
 
-- JLS §8.1.4 (superclasses), §8.4.8 (overriding), §8.8.7 (constructor bodies),
-  §12.5 (creation of instances and initialization order).
-- JEP 513 — Flexible Constructor Bodies (final in JDK 25).
-- `java.lang.Object` API docs: `getClass()`, `equals`, `hashCode`.
-- Inside Java podcast / JEP 513 discussion on validating before `super` (Dev.java).
+- [JLS §8.1.4 — Superclasses and Subclasses](https://docs.oracle.com/javase/specs/jls/se25/html/jls-8.html)
+- [JLS §8.4.8 — Overriding and Hiding Methods](https://docs.oracle.com/javase/specs/jls/se25/html/jls-8.html)
+- [JLS §8.8.7 — Constructor Bodies](https://docs.oracle.com/javase/specs/jls/se25/html/jls-8.html)
+- [JLS §12.5 — Creation of New Class Instances](https://docs.oracle.com/javase/specs/jls/se25/html/jls-12.html)
+- [JLS §6.6 — Access Control](https://docs.oracle.com/javase/specs/jls/se25/html/jls-6.html)
+- [JEP 513 — Flexible Constructor Bodies](https://openjdk.org/jeps/513)
+- [`java.lang.Object`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Object.html)

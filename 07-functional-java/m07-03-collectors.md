@@ -22,3 +22,6 @@ minutes: 25
 ## Solutions
 
 ## References
+
+- [`java.util.stream.Collectors`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Collectors.html)
+- [`java.util.stream.Stream`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Stream.html)

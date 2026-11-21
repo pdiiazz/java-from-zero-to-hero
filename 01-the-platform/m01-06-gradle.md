@@ -22,3 +22,8 @@ minutes: 25
 ## Solutions
 
 ## References
+
+- [`jlink` tool](https://docs.oracle.com/en/java/javase/25/docs/specs/man/jlink.html)
+- [`jpackage` tool](https://docs.oracle.com/en/java/javase/25/docs/specs/man/jpackage.html)
+- [`java.lang.module.ModuleDescriptor`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/module/ModuleDescriptor.html)
+- [Java SE 25 documentation](https://docs.oracle.com/en/java/javase/25/)

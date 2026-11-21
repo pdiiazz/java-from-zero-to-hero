@@ -22,3 +22,11 @@ minutes: 30
 ## Solutions
 
 ## References
+
+- [`java.time.Instant`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/Instant.html)
+- [`java.time.LocalDate`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/LocalDate.html)
+- [`java.time.ZonedDateTime`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/ZonedDateTime.html)
+- [`java.time.Duration`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/Duration.html)
+- [`java.time.Period`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/Period.html)
+- [`java.time.format.DateTimeFormatter`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/format/DateTimeFormatter.html)
+- [`java.time.ZoneId`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/ZoneId.html)

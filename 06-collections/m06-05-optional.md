@@ -22,3 +22,6 @@ minutes: 15
 ## Solutions
 
 ## References
+
+- [`java.util.Optional`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html)
+- [`java.util` package](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/package-summary.html)

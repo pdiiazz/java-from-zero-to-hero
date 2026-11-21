@@ -22,3 +22,8 @@ minutes: 20
 ## Solutions
 
 ## References
+
+- [`java.io.Serializable`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/io/Serializable.html)
+- [`java.io.ObjectInputStream`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/io/ObjectInputStream.html)
+- [`java.io.ObjectOutputStream`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/io/ObjectOutputStream.html)
+- [`java.io.ObjectInputFilter`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/io/ObjectInputFilter.html)

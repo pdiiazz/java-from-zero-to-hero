@@ -22,3 +22,8 @@ minutes: 20
 ## Solutions
 
 ## References
+
+- [JLS §14.15.3 — try-with-resources Statement](https://docs.oracle.com/javase/specs/jls/se25/html/jls-14.html)
+- [`java.lang.AutoCloseable`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/AutoCloseable.html)
+- [`java.io.Closeable`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/io/Closeable.html)
+- [`java.lang.Throwable`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Throwable.html)

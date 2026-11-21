@@ -22,3 +22,7 @@ minutes: 30
 ## Solutions
 
 ## References
+
+- [JLS §14.10 — The assert Statement](https://docs.oracle.com/javase/specs/jls/se25/html/jls-14.html)
+- [`java.lang.AssertionError`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/AssertionError.html)
+- [Java SE 25 API specification](https://docs.oracle.com/en/java/javase/25/docs/api/)

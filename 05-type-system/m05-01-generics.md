@@ -22,3 +22,7 @@ minutes: 25
 ## Solutions
 
 ## References
+
+- [JLS §4.5 — Parameterized Types](https://docs.oracle.com/javase/specs/jls/se25/html/jls-4.html)
+- [JLS §8.1.2 — Generic Classes and Type Parameters](https://docs.oracle.com/javase/specs/jls/se25/html/jls-8.html)
+- [`java.util.List`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html)

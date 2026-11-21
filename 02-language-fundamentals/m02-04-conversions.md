@@ -22,3 +22,7 @@ minutes: 15
 ## Solutions
 
 ## References
+
+- [JLS §5 — Conversions and Promotions](https://docs.oracle.com/javase/specs/jls/se25/html/jls-5.html)
+- [`java.lang.Number`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Number.html)
+- [`java.lang.Double`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Double.html)

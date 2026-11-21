@@ -23,3 +23,7 @@ minutes: 25
 ## Solutions
 
 ## References
+
+- [JLS §8.1.1.1 — Abstract Classes](https://docs.oracle.com/javase/specs/jls/se25/html/jls-8.html)
+- [JLS §9 — Interfaces](https://docs.oracle.com/javase/specs/jls/se25/html/jls-9.html)
+- [`java.lang.Override`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Override.html)

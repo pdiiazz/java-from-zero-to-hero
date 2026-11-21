@@ -22,3 +22,8 @@ minutes: 20
 ## Solutions
 
 ## References
+
+- [`java.math.BigDecimal`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/math/BigDecimal.html)
+- [`java.math.BigInteger`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/math/BigInteger.html)
+- [`java.math.RoundingMode`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/math/RoundingMode.html)
+- [`java.math.MathContext`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/math/MathContext.html)

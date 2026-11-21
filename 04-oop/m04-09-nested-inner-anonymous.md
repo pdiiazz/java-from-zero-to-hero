@@ -23,3 +23,7 @@ minutes: 25
 ## Solutions
 
 ## References
+
+- [JLS §8.1.3 — Inner Classes and Enclosing Instances](https://docs.oracle.com/javase/specs/jls/se25/html/jls-8.html)
+- [JLS §15.9.5 — Anonymous Class Declarations](https://docs.oracle.com/javase/specs/jls/se25/html/jls-15.html)
+- [`java.lang.Runnable`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Runnable.html)

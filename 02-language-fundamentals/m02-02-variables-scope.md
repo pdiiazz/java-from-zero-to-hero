@@ -22,3 +22,7 @@ minutes: 15
 ## Solutions
 
 ## References
+
+- [JLS §4.12 — Variables](https://docs.oracle.com/javase/specs/jls/se25/html/jls-4.html)
+- [JLS §6.3 — Scope of a Declaration](https://docs.oracle.com/javase/specs/jls/se25/html/jls-6.html)
+- [JLS §14.4 — Local Variable Declaration Statements](https://docs.oracle.com/javase/specs/jls/se25/html/jls-14.html)
