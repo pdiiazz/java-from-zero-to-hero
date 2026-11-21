@@ -11,3 +11,7 @@ Thumbs.db
 # Logs and local secrets
 *.log
 .env
+
+# Local agent authoring tools (not part of the course)
+.agents/
+skills-lock.json
