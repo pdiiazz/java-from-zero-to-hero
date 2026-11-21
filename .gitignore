@@ -1,0 +1,16 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor and IDE files
+.idea/
+.vscode/
+*.swp
+*~
+
+# Logs and local secrets
+*.log
+.env
+
+# Tooling caches (if a course interface is added later)
+node_modules/

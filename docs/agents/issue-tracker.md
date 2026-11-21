@@ -75,9 +75,9 @@ Setting a status to `complete` is how a ticket gets closed.
 
 ## Pull requests as a triage surface
 
-**PRs as a request surface: no.** The repo is under git (`main`, one commit, remote
-`https://github.com/pdiiazz/java-docs.git`) but the rebuild is committed on `main`
-without a PR. Set this to `yes` if PRs start being used.
+**PRs as a request surface: no.** The repo is under git (`main`, three commits, remote
+`https://github.com/pdiiazz/java-from-zero-to-hero`) but the rebuild is committed on
+`main` without a PR. Set this to `yes` if PRs start being used.
 
 ## When a skill says "publish to the issue tracker"
 
