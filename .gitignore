@@ -11,6 +11,3 @@ Thumbs.db
 # Logs and local secrets
 *.log
 .env
-
-# Tooling caches (if a course interface is added later)
-node_modules/

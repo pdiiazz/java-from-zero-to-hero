@@ -44,7 +44,7 @@ standard is set and repeatable.
 - Existing material: `Java0aAvanzadoCheatSheet.md`, Spanish, 58 sections, 1,835 lines.
   Confirmed gaps: no build tools, testing, JPMS, text blocks, switch expressions,
   sealed classes, pattern matching, virtual threads, or anything from Java 22+.
-- The repo **is** under git: three commits on `main`, remote
+- The repo **is** under git on `main`, remote
   `https://github.com/pdiiazz/java-from-zero-to-hero`.
 
 ## Decisions so far
