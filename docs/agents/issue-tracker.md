@@ -17,15 +17,16 @@ Resolve ids with `clickup_get_workspace_hierarchy` (Space → Folder → List) a
 
 ### This List's statuses
 
-Statuses are inherited from the Space and are in Spanish:
+Statuses are defined on the folder `Mío` (`1500910000000649`) and are in English:
 
-| Status       | Type     | Meaning                     |
-| ------------ | -------- | --------------------------- |
-| `pendiente`  | `open`   | Not started / needs triage  |
-| `en curso`   | `custom` | Being worked on             |
-| `completado` | `closed` | Done                        |
+| Status        | Type     | Meaning                    |
+| ------------- | -------- | -------------------------- |
+| `to do`       | `open`   | Not started / needs triage |
+| `in progress` | `custom` | Being worked on            |
+| `deployed`    | `custom` | Shipped, not yet archived  |
+| `complete`    | `closed` | Done                       |
 
-Setting a status to `completado` is how a ticket gets closed.
+Setting a status to `complete` is how a ticket gets closed.
 
 ## Conventions
 
@@ -48,7 +49,7 @@ Setting a status to `completado` is how a ticket gets closed.
   (`waiting on` / `blocking`). A ticket is unblocked when everything it waits on is
   closed.
 - **Close**: there is no single "close" verb. Post the explanation as a comment, then
-  set `status: "completado"` with `clickup_update_task`. `clickup_delete_task` trashes
+  set `status: "complete"` with `clickup_update_task`. `clickup_delete_task` trashes
   the task and its subtasks — never use it for triage.
 - **Search**: `clickup_search` across tasks, Docs, chats and more.
 
@@ -74,8 +75,9 @@ Setting a status to `completado` is how a ticket gets closed.
 
 ## Pull requests as a triage surface
 
-**PRs as a request surface: no.** This repo is not under git and has no PRs. Set this
-to `yes` if that changes.
+**PRs as a request surface: no.** The repo is under git (`main`, one commit, remote
+`https://github.com/pdiiazz/java-docs.git`) but the rebuild is committed on `main`
+without a PR. Set this to `yes` if PRs start being used.
 
 ## When a skill says "publish to the issue tracker"
 

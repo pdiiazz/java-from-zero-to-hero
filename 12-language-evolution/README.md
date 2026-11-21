@@ -1,3 +1,3 @@
-# M10 Concurrency
+# M12 Language evolution
 
 [Course index](../README.md).

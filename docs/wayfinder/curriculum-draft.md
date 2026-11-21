@@ -1,25 +1,25 @@
 # Curriculum draft (for review)
 
-Status: **approved by the user** (D17). 12 modules, 64 topics, plus one appendix.
+Status: **approved by the user**. 14 modules, 66 topics, plus one appendix.
 Baseline Java 25 LTS. Audience: programmers who already program, new to Java.
 No frameworks.
 
 ## What changed in this revision
 
-- **OOP is now one module** (M04, 12 topics) instead of two. Inheritance,
-  polymorphism, abstraction, nesting, records and enums sit together, because
-  they only make sense read as one story.
-- **M04 is split into three parts** (`part:` in the frontmatter) so the module
-  stays navigable without being split into separate folders.
-- **New topics** added from the cheat-sheet gaps and from advanced core Java:
-  `java.time`, regular expressions, nested/inner/anonymous classes,
-  downcasting and `instanceof`, GC and memory areas, scoped values, logging and
-  runtime diagnostics.
-- **Merged** to stay near the 60-topic ceiling: method references into lambdas,
-  `var` into variables, record patterns into pattern matching, test design into
-  JUnit, `Scanner` and `Math`/`RandomGenerator` into existing topics.
-- **Pulled out of the topic list:** the LTS upgrade path and the version matrix
-  are meta-docs (`docs/`), not lessons. The preview appendix stays an appendix.
+- **M10 Data access with JDBC is a new module.** JDBC was `m09-05`; it now stands
+  alone as `m10-01-jdbc`, so the database seam has a home of its own.
+- **Gradle moved from M00 to M01** as `m01-06-gradle`. M00 is now just running
+  Java; the platform module owns the toolchain.
+- **Pattern matching moved from M11 to M04** as `m04-13-pattern-matching`, next to
+  polymorphism, sealed types and records. M12 keeps only the feature map.
+- **M09 gained JSON and HTTP** (`m09-05-json`, `m09-06-http`). JSON is taught with
+  Jackson as a documented snippet dependency; HTTP uses the JDK's
+  `java.net.http.HttpClient`. Raw sockets remain out of scope.
+- **M13 puts testing last.** The topic order is now SOLID, design patterns,
+  logging/diagnostics, then JUnit 5.
+- M04 remains one module with three `part` values: `modeling`, `inheritance`,
+  `data-carriers`.
+- The preview appendix stays an appendix, outside the main track.
 
 ## Topic contract
 
@@ -50,29 +50,31 @@ Rules:
 - One topic per file. No topic spans two files.
 - Section headings are literal and never renamed.
 - Code fences carry a language and a `title` attribute; no test harness, no CI.
-- Every `since:` value names the Java version that introduced the feature.
+- Every `since:` value names the Java version that introduced the feature. For
+  topics about a library or practice rather than a language feature, it names
+  the baseline (`java-25`) or the version of the JDK API used.
 - `References` cites JEP, JLS section, or official API docs. No blogs.
 - `part` is display metadata only. It never changes ids or file paths.
 
 ## Modules and topics
 
-### M00 Getting started (2)
+### M00 Getting started (1)
 
 1. `m00-01-run-java` — JDK, `javac`, `java`, JShell, compact source files
    (JEP 512) and instance `main` methods
-2. `m00-02-gradle` — Gradle Kotlin DSL, layout, dependencies, tasks, runnable
-   jars, `jlink`, `jpackage`
 
-### M01 The platform (5)
+### M01 The platform (6)
 
-3. `m01-01-design-goals` — what Java guarantees: portability, strong typing, no
+2. `m01-01-design-goals` — what Java guarantees: portability, strong typing, no
    pointers, GC, backwards compatibility, naming conventions
-4. `m01-02-jvm-bytecode` — JVM, bytecode, class loading, JIT, AOT cache
-5. `m01-03-memory-and-gc` — stack vs heap, object headers, GC families (G1, ZGC),
+3. `m01-02-jvm-bytecode` — JVM, bytecode, class loading, JIT, AOT cache
+4. `m01-03-memory-and-gc` — stack vs heap, object headers, GC families (G1, ZGC),
    reachability, weak/soft/phantom references, `Cleaner`
-6. `m01-04-releases` — editions, LTS cadence, preview lifecycle, how to read a JEP
-7. `m01-05-jpms` — modules, module path, `requires`/`exports`, `ServiceLoader`,
+5. `m01-04-releases` — editions, LTS cadence, preview lifecycle, how to read a JEP
+6. `m01-05-jpms` — modules, module path, `requires`/`exports`, `ServiceLoader`,
    module import declarations (JEP 511)
+7. `m01-06-gradle` — Gradle Kotlin DSL, layout, dependencies, tasks, runnable
+   jars, `jlink`, `jpackage`
 
 ### M02 Language fundamentals (7)
 
@@ -99,7 +101,7 @@ Rules:
 19. `m03-05-datetime` — `Instant`, `LocalDate`, `ZonedDateTime`, `Duration`,
     `Period`, `DateTimeFormatter`, DST traps
 
-### M04 Object-oriented programming (12)
+### M04 Object-oriented programming (13)
 
 **Part `modeling`**
 
@@ -115,11 +117,12 @@ Rules:
 **Part `inheritance`**
 
 24. `m04-05-inheritance-super` — `extends`, `super`, constructor chaining,
-    inheritance chains, `final` classes and methods
+    inheritance chains, `final` classes and methods. The golden sample lives at
+    `04-oop/m04-05-inheritance-super.md`.
 25. `m04-06-method-dispatch` — overloading vs overriding, `@Override`, covariant
     returns, static vs dynamic binding
 26. `m04-07-polymorphism-casting` — upcasting, downcasting, `instanceof`,
-    `ClassCastException`, pattern matching preview
+    `ClassCastException`
 27. `m04-08-abstract-vs-interface` — abstract classes, interfaces, `default`,
     `static` and `private` interface methods, multiple inheritance of type
 28. `m04-09-nested-inner-anonymous` — static nested, inner, local and anonymous
@@ -127,85 +130,92 @@ Rules:
 29. `m04-10-sealed` — sealed interfaces and classes, `permits`, exhaustiveness
 30. `m04-11-records` — record semantics, compact constructors, custom accessors,
     when not to use records
+31. `m04-13-pattern-matching` — type patterns, `switch` patterns, record patterns,
+    guarded patterns, unnamed variables
 
 **Part `data-carriers`**
 
-31. `m04-12-enums` — enum constants with state, constructors and methods,
+32. `m04-12-enums` — enum constants with state, constructors and methods,
     `EnumSet`/`EnumMap`, enum singleton, exhaustive switches
 
 ### M05 Type system (5)
 
-32. `m05-01-generics` — generic types and methods, bounds, recursive bounds
-33. `m05-02-wildcards` — variance, PECS, wildcard capture
-34. `m05-03-erasure` — type erasure, bridges, heap pollution, `@SafeVarargs`,
+33. `m05-01-generics` — generic types and methods, bounds, recursive bounds
+34. `m05-02-wildcards` — variance, PECS, wildcard capture
+35. `m05-03-erasure` — type erasure, bridges, heap pollution, `@SafeVarargs`,
     what generics cannot do
-35. `m05-04-annotations` — declaring annotations, `@Retention`, `@Target`,
+36. `m05-04-annotations` — declaring annotations, `@Retention`, `@Target`,
     repeating and type annotations, compile-time processing
-36. `m05-05-reflection` — `Class`, `Field`, `Method`, `Constructor`, dynamic
+37. `m05-05-reflection` — `Class`, `Field`, `Method`, `Constructor`, dynamic
     proxies, module access rules, cost and risk
 
 ### M06 Collections (5)
 
-37. `m06-01-collection-contracts` — interfaces, complexity table, mutability,
+38. `m06-01-collection-contracts` — interfaces, complexity table, mutability,
     immutable factories, `Collections` wrappers
-38. `m06-02-implementations` — `ArrayList`, `LinkedList`, `HashSet`,
+39. `m06-02-implementations` — `ArrayList`, `LinkedList`, `HashSet`,
     `LinkedHashSet`, `TreeSet`, `HashMap`, `LinkedHashMap`, `TreeMap`,
     `ArrayDeque`, concurrent maps
-39. `m06-03-comparable-comparator` — natural ordering, `Comparator` chains,
+40. `m06-03-comparable-comparator` — natural ordering, `Comparator` chains,
     consistency with `equals`
-40. `m06-04-iteration-failfast` — `Iterable`, iterators, fail-fast,
+41. `m06-04-iteration-failfast` — `Iterable`, iterators, fail-fast,
     `ConcurrentModificationException`, safe removal
-41. `m06-05-optional` — `Optional` as a return type, what it is not for
+42. `m06-05-optional` — `Optional` as a return type, what it is not for
 
 ### M07 Functional Java (4)
 
-42. `m07-01-lambdas` — functional interfaces, lambdas, method references,
+43. `m07-01-lambdas` — functional interfaces, lambdas, method references,
     effectively final captures, `java.util.function`
-43. `m07-02-stream-pipelines` — sources, intermediate and terminal operations,
+44. `m07-02-stream-pipelines` — sources, intermediate and terminal operations,
     laziness, short-circuiting
-44. `m07-03-collectors` — `toList`, `groupingBy`, `partitioningBy`, downstream
+45. `m07-03-collectors` — `toList`, `groupingBy`, `partitioningBy`, downstream
     collectors, `teeing`, `mapMulti`
-45. `m07-04-stream-parallelism` — when parallel helps and when it hurts,
+46. `m07-04-stream-parallelism` — when parallel helps and when it hurts,
     gatherers (JEP 485), stateful lambdas, side effects
 
 ### M08 Errors and resources (2)
 
-46. `m08-01-exceptions` — hierarchy, checked vs unchecked, custom exceptions,
+47. `m08-01-exceptions` — hierarchy, checked vs unchecked, custom exceptions,
     wrapping, suppressed exceptions, exception design
-47. `m08-02-try-with-resources` — `AutoCloseable`, close order, suppressed
+48. `m08-02-try-with-resources` — `AutoCloseable`, close order, suppressed
     exceptions, `finally` pitfalls
 
-### M09 I/O and files (5)
+### M09 I/O and files (6)
 
-48. `m09-01-path-files` — `Path`, `Files`, walking trees, attributes,
+49. `m09-01-path-files` — `Path`, `Files`, walking trees, attributes,
     `WatchService`, why `File` is legacy
-49. `m09-02-streams-charsets` — byte vs character streams, buffering, charsets,
+50. `m09-02-streams-charsets` — byte vs character streams, buffering, charsets,
     `Scanner`, standard streams, closing rules
-50. `m09-03-nio` — buffers, channels, memory-mapped files, `RandomAccessFile`
-51. `m09-04-serialization` — `Serializable`, `serialVersionUID`, filters, why it
+51. `m09-03-nio` — buffers, channels, memory-mapped files, `RandomAccessFile`
+52. `m09-04-serialization` — `Serializable`, `serialVersionUID`, filters, why it
     is legacy and what replaced it
-52. `m09-05-jdbc` — connections, `PreparedStatement`, transactions, resource
+53. `m09-05-json` — JSON with Jackson (`ObjectMapper`), records as DTOs, parsing
+    vs binding, external dependency shown as a snippet only
+54. `m09-06-http` — `HttpClient`, requests and responses, `HttpRequest.BodyPublishers`,
+    `HttpResponse.BodyHandlers`, async calls, timeouts, error handling
+
+### M10 Data access with JDBC (1)
+
+55. `m10-01-jdbc` — connections, `PreparedStatement`, transactions, resource
     handling. JDK-only (`java.sql`); the future database track extends it.
 
-### M10 Concurrency (6)
+### M11 Concurrency (6)
 
-53. `m10-01-threads` — lifecycle, `start` vs `run`, interruption, daemon threads
-54. `m10-02-memory-model` — happens-before, `volatile`, safe publication,
+56. `m11-01-threads` — lifecycle, `start` vs `run`, interruption, daemon threads
+57. `m11-02-memory-model` — happens-before, `volatile`, safe publication,
     visibility vs atomicity
-55. `m10-03-synchronization` — `synchronized`, `ReentrantLock`, `StampedLock`,
+58. `m11-03-synchronization` — `synchronized`, `ReentrantLock`, `StampedLock`,
     atomics and CAS, deadlock diagnosis
-56. `m10-04-executors` — pools, `ExecutorService`, `Future`,
+59. `m11-04-executors` — pools, `ExecutorService`, `Future`,
     `CompletableFuture`, `ForkJoinPool`, shutdown
-57. `m10-05-virtual-threads` — virtual vs platform threads, pinning, when they
+60. `m11-05-virtual-threads` — virtual vs platform threads, pinning, when they
     help and when they do not
-58. `m10-06-scoped-values` — `ThreadLocal` and its leaks, scoped values
+61. `m11-06-scoped-values` — `ThreadLocal` and its leaks, scoped values
     (JEP 506)
 
-### M11 Language evolution (2 + appendix)
+### M12 Language evolution (1 + appendix)
 
-59. `m11-01-pattern-matching` — type patterns, `switch` patterns, record
-    patterns, guarded patterns, unnamed variables
-60. `m11-02-feature-map` — which feature arrived in which release; how to read
+62. `m12-01-feature-map` — which feature arrived in which release; how to read
     and migrate old code
 
 Appendix: `appendix-preview-features` — preview and incubating features worth
@@ -213,15 +223,16 @@ tracking: primitive types in patterns (JEP 507), structured concurrency
 (JEP 505), stable values (JEP 502), vector API, foreign function and memory API,
 class-file API. Excluded from the main track.
 
-### M12 Design, testing and diagnostics (4)
+### M13 Design, testing and diagnostics (4)
 
-61. `m12-01-junit5` — tests, assertions, lifecycle, parameterized tests, test
-    design without mocking frameworks
-62. `m12-02-solid` — SOLID, cohesion and coupling, dependency inversion by hand
-63. `m12-03-design-patterns` — strategy, factory, builder, decorator, adapter,
+63. `m13-01-solid` — SOLID, cohesion and coupling, dependency inversion by hand
+64. `m13-02-design-patterns` — strategy, factory, builder, decorator, adapter,
     template method, DAO; when a pattern is overkill
-64. `m12-04-logging-diagnostics` — `System.Logger`/`java.util.logging`, JFR,
+65. `m13-03-logging-diagnostics` — `System.Logger`/`java.util.logging`, JFR,
     `jcmd`, `jstack`, reading a thread dump, heap histogram
+66. `m13-04-testing` — tests, assertions, lifecycle, parameterized tests, test
+    design without mocking frameworks. Testing is deliberately last, after the
+    design topics it exercises.
 
 ## What I extracted from the cheat sheet
 
@@ -230,26 +241,26 @@ and forgotten:
 
 | Cheat-sheet chapter | Verdict |
 | --- | --- |
-| I. Fundamentos (1–2), 32 | Folded into `m00-01`, `m00-02`, `m01-01`, `m01-02` |
+| I. Fundamentos (1–2), 32 | Folded into `m00-01`, `m01-01`, `m01-02`, `m01-06` |
 | II. Tipos (3–7) | `m02-01` … `m02-04` |
 | III. API básica (8–12) | Package/module model → `m01-05`; `Math` → `m02-03`; `BigInteger`/`BigDecimal` → `m03-03`; `String` → `m03-01`; `Scanner` → `m09-02` |
 | IV. Control de flujo (13–14) | `m02-05`, `m02-06` |
 | V. Arrays (15) | `m02-07` |
 | VI. POO (16–31) | All 16 sections land in M04: 16 → module intro, 17 → 20, 18 → 21, 19 → 25, 20/21 → 22, 22/23 → 24, 24 → 23, 25 → 21, 26/27 → 26, 28/29 → 27, 30/31 → 28 |
-| VII. Empaquetado y excepciones (32–33) | `m00-02`, `m08-01`, `m08-02` |
+| VII. Empaquetado y excepciones (32–33) | `m01-06`, `m08-01`, `m08-02` |
 | VIII. Entrada/Salida (34–38) | `m09-01` … `m09-04` |
-| IX. Genéricos y concurrencia (39–40) | `m05-01` … `m05-03`, `m10-01` |
+| IX. Genéricos y concurrencia (39–40) | `m05-01` … `m05-03`, `m11-01` |
 | X. Colecciones (41) | `m06-01`, `m06-02`, `m06-04` |
-| XI. Redes y BD (42–45) | Sockets dropped (see omissions); JDBC + `PreparedStatement` + transactions → `m09-05` |
+| XI. Redes y BD (42–45) | Raw sockets dropped; JDBC + `PreparedStatement` + transactions → `m10-01`; HTTP → `m09-06`; JSON → `m09-05` |
 | XII. Web y reflexión (46–48) | Servlets and JavaBeans dropped; reflection → `m05-05` |
-| XIII. Java moderno (49–58) | SOLID → `m12-02`; patterns → `m12-03`; lambdas and method refs → `m07-01`; streams → `m07-02` … `m07-04`; `Optional` → `m06-05`; records → `m04-11`; enums → `m04-12`; annotations → `m05-04`; `Comparable`/`Comparator` → `m06-03` |
+| XIII. Java moderno (49–58) | SOLID → `m13-01`; patterns → `m13-02`; lambdas and method refs → `m07-01`; streams → `m07-02` … `m07-04`; `Optional` → `m06-05`; records → `m04-11`; enums → `m04-12`; annotations → `m05-04`; `Comparable`/`Comparator` → `m06-03`; pattern matching → `m04-13` |
 
 ### Gaps in the cheat sheet that this plan closes
 
 - **Missing entirely:** build tools, testing, JPMS, generics depth (erasure),
   `java.time`, regular expressions, logging and diagnostics, GC and memory,
   `ThreadLocal` and scoped values, atomics, `default`/`static`/`private`
-  interface methods beyond a mention.
+  interface methods beyond a mention, JSON and HTTP.
 - **Missing from Java 9–25:** text blocks, switch expressions, records, sealed
   types, pattern matching, record patterns, virtual threads, stream gatherers,
   flexible constructor bodies, compact source files, module imports, unnamed
@@ -272,14 +283,14 @@ and forgotten:
 
 ## Deliberate omissions
 
-- Sockets, Servlets, JavaBeans: networking and web/framework territory, outside
-  the no-frameworks ceiling.
+- Raw sockets, Servlets, JavaBeans: networking and web/framework territory,
+  outside the no-frameworks ceiling. The old `m09-06-sockets` ticket is closed.
 - WebSockets: only a client exists in the JDK (`java.net.http.WebSocket`); a
-  server requires a framework. Deferred to the Spring path (D20).
-- Spring: separate future learning path. The seam is M12 (SOLID, patterns,
+  server requires a framework. Deferred to the Spring path.
+- Spring: separate future learning path. The seam is M13 (SOLID, patterns,
   dependency inversion by hand).
-- `HttpClient`, foreign function and memory API, class-file API, vector API:
-  listed in the preview/advanced appendix, not taught as core.
+- Foreign function and memory API, class-file API, vector API: listed in the
+  preview/advanced appendix, not taught as core.
 - Stream parallelism internals: appendix depth only.
 
 ## Open items
